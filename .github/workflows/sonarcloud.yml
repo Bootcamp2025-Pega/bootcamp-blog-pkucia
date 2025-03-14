@@ -41,4 +41,5 @@ jobs:
             -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
             -Dsonar.sources=components,lib,pages
-            -Dsonar.tests=**/*.test.ts,**/*.test.tsx
+            -Dsonar.tests=components,lib,pages
+            -Dsonar.test.inclusions=**/*.test.ts,**/*.test.tsx
